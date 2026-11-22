@@ -1,0 +1,22 @@
+2026-11-22 15:06:39,980 | INFO | === Inicio de simulación Software FJ ===
+2026-11-22 15:06:39,981 | INFO | Cliente registrado: CLI-01 - Laura Gómez
+2026-11-22 15:06:39,983 | ERROR | Operación 2 fallida por correo inválido | ClienteInvalidoError: Correo electrónico inválido: 'correo-no-valido'.
+2026-11-22 15:06:39,983 | INFO | Cliente registrado: CLI-03 - Andrés Mendoza
+2026-11-22 15:06:39,984 | ERROR | Operación 4 fallida por nombre vacío | ClienteInvalidoError: El nombre del cliente debe tener al menos 2 caracteres.
+2026-11-22 15:06:39,984 | INFO | Servicio de sala creado: SRV-SALA-1 (Sala Ejecutiva Norte)
+2026-11-22 15:06:39,985 | INFO | Servicio de alquiler creado: SRV-EQ-1 (EQ-409)
+2026-11-22 15:06:39,985 | INFO | Asesoría creada: SRV-ASE-1 - Cloud
+2026-11-22 15:06:39,986 | ERROR | Operación 7 fallida por tarifa negativa | CalculoInconsistenteError: La tarifa base debe ser mayor que cero.
+2026-11-22 15:06:39,987 | INFO | Reserva creada [RES-01] para Laura Gómez - Servicio: SRV-SALA-1
+2026-11-22 15:06:39,987 | INFO | Reserva [RES-01] CONFIRMADA.
+2026-11-22 15:06:39,987 | INFO | Reserva [RES-01] procesada con éxito. Total: $160.65
+2026-11-22 15:06:39,987 | INFO | Fin de intento de procesamiento para reserva [RES-01].
+2026-11-22 15:06:39,988 | INFO | Reserva creada [RES-02] para Andrés Mendoza - Servicio: SRV-EQ-1
+2026-11-22 15:06:39,988 | INFO | Reserva [RES-02] CONFIRMADA.
+2026-11-22 15:06:39,988 | INFO | Reserva [RES-02] procesada con éxito. Total: $70.00
+2026-11-22 15:06:39,988 | INFO | Fin de intento de procesamiento para reserva [RES-02].
+2026-11-22 15:06:39,989 | ERROR | Operación 10 fallida por servicio no disponible | ServicioNoDisponibleError: El servicio 'Arquitectura Cloud' no está disponible.
+2026-11-22 15:06:39,990 | ERROR | Operación 11 fallida con encadenamiento | causa: ValueError: invalid literal for int() with base 10: 'no_es_numero' | ReservaInvalidaError: Duración inválida suministrada para la reserva RES-04.
+2026-11-22 15:06:39,990 | INFO | Reserva [RES-01] CANCELADA.
+2026-11-22 15:06:39,990 | ERROR | Operación 12 fallida por doble cancelación | OperacionNoPermitidaError: La reserva 'RES-01' ya fue CANCELADA anteriormente.
+2026-11-22 15:06:39,990 | INFO | === Fin de simulación | Clientes: 2 | Servicios: 3 | Reservas: 2 ===
